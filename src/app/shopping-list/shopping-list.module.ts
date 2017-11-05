@@ -13,7 +13,6 @@ import { NgModule } from '@angular/core';
     ],
     imports: [
         CommonModule,
-        AppRoutingModule,
         FormsModule,
         ShoppingListRouteModule
     ],

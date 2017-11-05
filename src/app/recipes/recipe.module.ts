@@ -1,3 +1,5 @@
+import { AppModule } from './../app.module';
+import { HomeComponent } from './../core/home/home.component';
 import { SharedModule } from './../shared/shared.module';
 import { RecipeRoutingModule } from './recipe.routing.module';
 import { AppRoutingModule } from './../app.routing.module';
@@ -23,7 +25,6 @@ import { CommonModule } from '@angular/common';
     imports: [
         CommonModule,
         ReactiveFormsModule,
-        AppRoutingModule,
         RecipeRoutingModule,
         SharedModule
     ]

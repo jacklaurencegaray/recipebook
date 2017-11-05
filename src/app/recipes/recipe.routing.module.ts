@@ -10,19 +10,18 @@ const recipeRoutes: Routes = [
     { path: '', component: RecipesComponent, children: [
         { path: '', component: RecipeStartComponent },
         { path: 'new', component: RecipeEditComponent, canActivate: [AuthGuard] },
-        { path: ':id', component: RecipeDetailComponent, canActivate: [AuthGuard] },
-        { path: ':id/edit', component: RecipeEditComponent }
+        { path: ':id', component: RecipeDetailComponent },
+        { path: ':id/edit', component: RecipeEditComponent, canActivate: [AuthGuard] }
     ] }
 ];
 
 @NgModule({
     imports: [
-        RouterModule.forChild(recipeRoutes)
+        RouterModule.forChild(recipeRoutes),
     ],
+    exports: [RouterModule],
+    providers: [AuthGuard]
 
-    exports: [
-        RouterModule
-    ]
 })
 
 export class RecipeRoutingModule {
