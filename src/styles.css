@@ -1,4 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,700');
+
+* {
+    transition: 1s all !important;
+}
+
+html, body, p, a, div {
+    font-family: 'Poppins';
+    font-size: 17px;
+}
+
+label {
+    font-weight: 500 !important;
+}
+
 a, .cursor {
     cursor: pointer;
 }

@@ -1,3 +1,4 @@
+import { CoreRoutingModule } from './core/core.routing.module';
 import { CoreModule } from './core/core.module';
 import { AuthModule } from './auth/auth.module';
 import { SharedModule } from './shared/shared.module';
@@ -18,9 +19,10 @@ import * as firebase from 'firebase';
     BrowserModule,
     HttpModule,
     AppRoutingModule,
-    SharedModule,
     AuthModule,
-    CoreModule
+    CoreModule,
+    SharedModule,
+    CoreRoutingModule    
   ],
   bootstrap: [AppComponent]
 })

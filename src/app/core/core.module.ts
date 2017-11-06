@@ -1,3 +1,4 @@
+import { CoreRoutingModule } from './core.routing.module';
 import { AuthService } from './../auth/auth.service';
 import { DataStorageService } from './../shared/data-storage.service';
 import { RecipeService } from './../recipes/recipe.service';
@@ -7,18 +8,19 @@ import { SharedModule } from './../shared/shared.module';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { NgModule } from '@angular/core';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
     declarations: [
         HeaderComponent,
-        HomeComponent
+        HomeComponent,
+        ErrorComponent
     ],
     imports: [
         SharedModule,
-        AppRoutingModule
+        CoreRoutingModule
     ],
     exports: [
-        AppRoutingModule,
         HeaderComponent
     ],
     providers: [

@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Catamaran:700');
+
+.navbar-default {
+    background-color: #092D3D;
+    border: 0;
+    border-radius: 0;
+}
+.navbar-default a {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    background-color: #242333;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    background-color: #242333;
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover, .dropdown-menu {
+    background-color: #242333;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #fff;
+}
+
+.navbar-default .logo {
+    font-family: 'Catamaran';
+    letter-spacing: -1px;
+    font-size: 25px;
+}

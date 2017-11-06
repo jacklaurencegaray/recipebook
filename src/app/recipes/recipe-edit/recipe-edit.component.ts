@@ -1,7 +1,7 @@
 import { Ingredient } from './../../shared/ingredient.model';
 import { RecipeService } from './../recipe.service';
 import { ActivatedRoute, Router, Params } from '@angular/router';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, PACKAGE_ROOT_URL } from '@angular/core';
 import { FormGroup, FormControl, FormArray, Validators } from '@angular/forms';
 
 @Component({
@@ -93,4 +93,7 @@ export class RecipeEditComponent implements OnInit {
     });
   }
 
+  getControls() {
+    return (<FormArray>this.recipeForm.get('ingredients')).controls;
+  }
 }
